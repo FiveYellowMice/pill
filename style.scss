@@ -81,9 +81,27 @@ a {
 	font-weight: bold;
 }
 
+.pill-collection {
+	max-width: 800px;
+	margin: auto;
+	
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.pill-card {
+	display: block;
+	flex: 1;
+	min-width: 250px;
+	margin: 10px;
+	padding: 5px;
+	
+	box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
+}
+
 .page-header {
 	width: 100%;
-	//height: 48px;
 	box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.25);
 	border-bottom: 3px solid #81D4FA;
 	

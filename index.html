@@ -11,7 +11,14 @@ layout: default
 
 <h1 class="center site-title">{{ site.title }}</h1>
 <p class="center">{{ site.description }}</p>
-<p class="center">缺货中，请过两天再来看。</p>
+<div class="pill-collection">
+	{% for pill in site.pills reversed %}
+	<div class="pill-card">
+		<a href="{{ site.baseurl }}{{ pill.url }}">{{ pill.thing }} 药丸 💊 {{ pill.title }}</a>
+		{{ pill.content }}
+	</div>
+	{% endfor %}
+</div>
 
 <div class="footer">
 	<span>由 <a href="https://fiveyellowmice.com/">FiveYellowMice</a> 制作</span>
