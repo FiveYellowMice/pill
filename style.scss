@@ -104,6 +104,15 @@ a {
 	box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
 }
 
+.page-title {
+	font-size: 48px;
+	font-weight: bold;
+	text-align: center;
+	
+	box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.25);
+	border-bottom: 3px solid #81D4FA;
+}
+
 .page-header {
 	width: 100%;
 	box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.25);
@@ -130,7 +139,7 @@ a {
 	}
 }
 
-.news-content {
+.page-content {
 	max-width: 800px;
 	margin: 24px auto;
 	padding: 5px;
@@ -164,4 +173,8 @@ a {
 	&>* {
 		margin: 5px;
 	}
+}
+
+.pill-buttons {
+	padding: 5px;
 }
