@@ -5,3 +5,15 @@ description: 这破玩意吃枣药丸！
 
 sass:
   style: compressed
+
+collections: 
+  pills:
+    output: true
+    permalink: /:name/
+
+defaults:
+  - scope:
+      path: ""
+      type: pills
+    values:
+      layout: pill

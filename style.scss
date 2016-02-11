@@ -17,7 +17,8 @@ ul, ol, li {
 }
 
 p {
-	margin: 16px;
+	margin-top: 16px;
+	margin-bottom: 16px;
 }
 
 a {
@@ -67,7 +68,7 @@ a {
 	box-shadow: 0 -5px 5px -5px rgba(0, 0, 0, 0.75);
 }
 
-.pill-icon {
+.site-icon {
 	display: block;
 	position: relative;
 	top: -64px;
@@ -78,6 +79,58 @@ a {
 .site-title {
 	font-size: 48px;
 	font-weight: bold;
+}
+
+.page-header {
+	width: 100%;
+	//height: 48px;
+	box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.25);
+	border-bottom: 3px solid #81D4FA;
+	
+	display: flex;
+	align-items: center;
+	
+	h1 {
+		display: inline-block;
+		font-size: 24px;
+		margin: 10px 24px 10px 0;
+	}
+	
+	.pill-icon {
+		margin: 24px;
+		width: 48px;
+		height: 48px;
+		
+		img {
+			width: 48px;
+			height: 48px;
+		}
+	}
+}
+
+.news-content {
+	max-width: 800px;
+	margin: 24px auto;
+	padding: 5px;
+}
+
+.sources {
+	max-width: 800px;
+	margin: 24px auto;
+	padding: 5px;
+	
+	h2 {
+		font-size: 24px;
+	}
+	
+	ul {
+		list-style: none;
+	}
+	
+	li {
+		margin-top: 12px;
+		margin-bottom: 12px;
+	}
 }
 
 .footer {

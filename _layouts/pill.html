@@ -1,0 +1,23 @@
+---
+layout: default
+---
+
+<header class="page-header">
+	<a class="pill-icon" href="{{ site.baseurl }}/"><img src="{{ site.baseurl }}/favicon-128.png" alt="药丸"></a>
+	<h1>{{ page.thing }} 药丸 💊 {{ page.title }}</h1>
+</header>
+
+<div class="news-content">
+	{{ content }}
+</div>
+
+{% if page.sources %}
+<div class="sources">
+	<h2>新闻来源</h2>
+	<ul>
+		{% for source in page.sources %}
+		<li><a href="{{ source.url }}" target="_blank">{{ source.title }}</a></li>
+		{% endfor %}
+	</ul>
+</div>
+{% endif %}
