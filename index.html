@@ -12,6 +12,7 @@ layout: default
 <h1 class="center site-title">{{ site.title }}</h1>
 <p class="center">{{ site.description }}</p>
 <p class="center"><a href="{{ site.baseurl }}/whatisit/">这是什么网站？</a></p>
+
 <div class="pill-collection">
 	{% for pill in site.pills reversed %}
 	<div class="pill-card">
@@ -21,6 +22,7 @@ layout: default
 	{% endfor %}
 </div>
 
+<p class="center">使用 <a href="{{ site.baseurl }}/feed.xml">RSS</a> 获取最新动态（<a href="https://fiveyellowmice.com/posts/2015/09/usage-of-rss.html">怎么用？</a>）</p>
 <div class="footer">
 	<span>由 <a href="https://fiveyellowmice.com/">FiveYellowMice</a> 制作</span>
 	<a href="{{ site.baseurl }}/copyright.txt">其他人作品的版权</a>
