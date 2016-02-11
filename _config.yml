@@ -3,6 +3,8 @@ url: https://pill.fiveyellowmice.com
 baseurl: ""
 description: 这破玩意吃枣药丸！
 
+exclude: [Gemfile, Gemfile.lock]
+
 sass:
   style: compressed
 

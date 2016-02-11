@@ -1,0 +1,7 @@
+---
+---
+
+{% for page in site.documents %}{{ page.url }}
+{% endfor %}{% for page in site.pages %}{{ page.url }}
+{% endfor %}{% for page in site.static_files %}{{ page.path }}
+{% endfor %}
