@@ -104,6 +104,15 @@ a {
 	box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
 }
 
+.load-more {
+	display: flex;
+	align-items: center;
+}
+
+#load-more-info {
+	display: none;
+}
+
 .page-title {
 	font-size: 48px;
 	font-weight: bold;
