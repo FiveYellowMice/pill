@@ -11,3 +11,6 @@ Gemfile.lock
 
 # File manager
 .directory
+
+# Identifier
+/cf_zone_id
