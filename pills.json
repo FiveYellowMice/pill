@@ -7,6 +7,6 @@
 		"title": "{{ pill.title }}",
 		"date": "{{ pill.date | date: "%F" }}",
 		"url": "{{ pill.url }}",
-		"content": "{{ pill.content | strip_newlines }}"
+		"content": "{{ pill.content | strip_newlines | replace: '"', '\"' }}"
 	}{% unless forloop.last %},{% endunless %}{% endfor %}
 ]
