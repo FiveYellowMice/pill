@@ -3,7 +3,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
 	<title>{% if page.title %}{% if page.thing %}{{ page.thing }} · {% endif %}{{ page.title }} - {% endif %}{{ site.title }}</title>
-	<meta name="description" content="{{ site.description }}">
+	<meta name="description" content="{% if page.layout == 'pill' %}{{ page.content | strip_html | truncate: 100 | xml_escape }}{% else %}{{ site.description | xml_escape }}{% endif %}">
 	<link rel="canonical" href="{{ site.url }}{{ page.url }}">
 
 	<link rel="shortcut icon" href="{{ site.baseurl }}/favicon.ico">
@@ -18,4 +18,7 @@
 	<meta property="og:description" content="{% if page.layout == 'pill' %}{{ page.content | strip_html | truncate: 100 | xml_escape }}{% else %}{{ site.description | xml_escape }}{% endif %}">
 	<meta property="og:type" content="website">
 	<meta property="og:url" content="{{ site.url }}{{ page.url }}">
+
+	<meta property="twitter:card" content="summary">
+	<meta property="twitter:site" content="@hkz85825915">
 </head>
