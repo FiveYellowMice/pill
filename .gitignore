@@ -2,15 +2,3 @@
 _site/
 .sass-cache/
 Gemfile.lock
-
-# Editor cache
-.~*
-*~
-*.kate-swp
-*.swp
-
-# File manager
-.directory
-
-# Identifier
-/cf_zone_id
