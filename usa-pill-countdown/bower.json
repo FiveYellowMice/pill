@@ -1,0 +1,21 @@
+{
+  "name": "usa-pill-countdown",
+  "homepage": "https://github.com/FiveYellowMice/pill",
+  "authors": [
+    "Kaizhe Huang <hkz85825915@gmail.com>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "GPL-3.0",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.7"
+  }
+}
