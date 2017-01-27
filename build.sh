@@ -13,4 +13,8 @@ need_command bower
 project_path="$(pwd)"
 
 cd "$project_path"
+echo "Building home page..."
+bower install
+
+cd "$project_path"
 echo "Complete!"
