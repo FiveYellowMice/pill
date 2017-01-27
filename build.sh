@@ -12,9 +12,5 @@ need_command bower
 
 project_path="$(pwd)"
 
-cd "$project_path/usa-pill-countdown"
-echo "Building USA Pill Countdown..."
-bower install
-
 cd "$project_path"
 echo "Complete!"
